@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK Download Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">APK Download Hub</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to APK Download Hub</h1>
+                <p>Your one-stop destination for safe and fast APK downloads.</p>
+                <a href="#downloads" class="btn">Explore Downloads</a>
+            </div>
+        </section>
+
+        <section id="downloads" class="downloads">
+            <h2>Latest APKs</h2>
+            <div class="download-grid">
+                <div class="download-card">
+                    <img src="subway-surfers.jpg" alt="Subway Surfers">
+                    <h3>Subway Surfers</h3>
+                    <p>Version: 1.0.0</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf" class="btn">Download</a>
+                </div>
+                <!-- Add more download cards here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 APK Download Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Adding an optional scroll-to-top button -->
+    <a href="#" class="scroll-top" id="scroll-top">↑</a>
+
+    <script>
+        // Scroll-to-top functionality
+        const scrollTopBtn = document.getElementById('scroll-top');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+        scrollTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+      </html>
